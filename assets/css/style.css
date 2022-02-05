@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+.fullscreen{
+    width: 100vw;
+    height: 100vh;
+}
+
+.ch-logo {
+    background-color: aliceblue; /* defines the background color of the image */
+    /* background: url('../imgs/colors.png') no-repeat center / contain;; */
+    mask: url(../imgs/logo.svg) no-repeat center / contain;
+    -webkit-mask: url(../imgs/logo.svg) no-repeat center / contain;
+    min-width: 100px;
+    min-height: 75px;
+}
+#ch-filterBtn{
+    display: inline-block;
+    text-decoration: none;
+    margin: 1rem;
+}
+.ch-genres li{
+    list-style: none;
+}
+
+#ch-filters{
+    background-color: #eee;
+}
+
+/* Footer */
+footer {
+    font-family: 'Open Sans Condensed';
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    font-size: 1.5em;
+}
