@@ -30,7 +30,7 @@
 <body>
     <!-- HEADER -->
     <navbar>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient border border-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark border border-dark">
             <div class="container mx-auto">
                 <!-- LOGO -->
                 <div class="ch-logo"></div>
@@ -40,10 +40,12 @@
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ch-userLogged mx-2"><a class="nav-link" href="javascript:void(0)">Ciao,
+                                <span id="ch-currentUser"></span></a></li>
                         <li class="nav-item ch-userLogged mx-2"><a class="nav-link" href="cart.html"><i
                                     class="fas fa-shopping-cart"></i> Carrello</a></li>
-                        <li class="nav-item ch-userLogged mx-2"><a class="nav-link" href="javascript:void(0)"><i
-                                    class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                        <li class="nav-item ch-userLogged mx-2"><a class="nav-link" id="ch-logoutBtn"
+                                href="javascript:void(0)"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                         <li class="nav-item ch-noUserLogged ms-2"><a class="nav-link" href="login.html"><i
                                     class="fas fa-sign-in-alt"></i> Login</a></li>
                     </ul>
@@ -55,55 +57,44 @@
     <main class="row m-0">
 
         <aside id="ch-filters" class="offcanvas offcanvas-bottom p-4">
-            <select name="ch-categories" id="ch-categories" class="mb-4">
+            <h3 class="mb-2 fs-4">Categorie:</h3>
+            <select name="ch-categories" id="ch-categories" class="mb-4 mx-3 w-75">
                 <option value="libri">Libri</option>
                 <option value="film">Film</option>
                 <option value="musica">Musica</option>
             </select>
-            <h3 class="mb-2">Generi:</h3>
-            
+            <h3 class="mb-2 fs-4">Generi:</h3>
+            <p class="fst-italic">*Filtri non implementati*</p>
+
             <div id="ch-book-genres" class="ch-genres">
                 <ul class="d-flex flex-row flex-wrap">
-                    <li class="px-3 py-1">
-                        <input type="checkbox" name="genere" id="genere" value="genere">
-                        <label for="genere">Genere Libri</label>
-                    </li>
-                    <li class="px-3 py-1">
-                        <input type="checkbox" name="genere" id="genere" value="genere">
-                        <label for="genere">Genere Libri</label>
-                    </li>
-                    <li class="px-3 py-1">
-                        <input type="checkbox" name="genere" id="genere" value="genere">
-                        <label for="genere">Genere Libri</label>
-                    </li>
                 </ul>
             </div>
             <div id="ch-film-genres" class="ch-genres">
                 <ul class="d-flex flex-row flex-wrap">
-                    <li class="px-3 py-1">
-                        <input type="checkbox" name="genere" id="genere" value="genere">
-                        <label for="genere">Genere Film</label>
-                    </li>
                 </ul>
             </div>
             <div id="ch-music-genres" class="ch-genres">
                 <ul class="d-flex flex-row flex-wrap">
-                    <li class="px-3 py-1">
-                        <input type="checkbox" name="genere" id="genere" value="genere">
-                        <label for="genere">Genere Musica</label>
-                    </li>
                 </ul>
             </div>
         </aside>
-        <section class="col-12 col-lg-9" id="ch-catalogue">
-            <div class="text-end">
-                <a class="text-secondary" href="javascript(0):void" id="ch-filterBtn" data-bs-toggle="offcanvas" data-bs-target="#ch-filters"><i class="fas fa-filter"></i> Filtri</a>
+
+        <section class="col-12 col-lg-9 p-4" id="ch-catalogue">
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <h2 id="ch-catalogueTitle" class="fs-2 fw-bold">
+                    </h3>
+                    <a class="text-secondary text-end" href="javascript(0):void" id="ch-filterBtn"
+                        data-bs-toggle="offcanvas" data-bs-target="#ch-filters"><i class="fas fa-filter"></i> Filtri</a>
             </div>
+
+            <div id="ch-catalogue-container" class="d-flex flex-wrap justify-content-between"></div>
+
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white p-3 bg-dark bg-gradient border border-dark text-center">
+    <footer class="bg-dark text-white p-3 border border-dark text-center">
         <div class="d-flex mb-3 align-items-center">
             <div class="col-md-6">
                 <div class="ch-logo"></div>

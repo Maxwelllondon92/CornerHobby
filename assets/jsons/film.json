@@ -3,7 +3,7 @@
         "nome": "Pulp Fiction",
         "prezzo":9.99,
         "generi":["thriller","drammatico"],
-        "immagine":"https://www.ibs.it/images/8717418595265_0_464_0_75.jpg",
+        "immagine":"https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg",
         "EAN":"4020628667788",
         "anno":1994,
         "regista":"Quentin Tarantino",
@@ -13,8 +13,8 @@
     {
         "nome": "Luca",
         "prezzo":9.27,
-        "generi":["animazione", "avventura", ""],
-        "immagine":"",
+        "generi":["animazione", "avventura"],
+        "immagine":"https://www.ibs.it/images/8717418595265_0_464_0_75.jpg",
         "EAN":"8717418595265",
         "anno":2021,
         "regista":"Enrico Casarosa",
@@ -81,7 +81,7 @@
         "generi":["fantasy","azione"],
         "immagine":"https://www.ibs.it/images/5051891102361_0_536_0_75.jpg",
         "EAN":"5051891102361",
-        "anno":1000,
+        "anno":2001,
         "regista":"Peter Jackson",
         "attori":["Sean Astin", "Sean Bean", "Cate Blanchett", "Orlando Bloom", "Bill Boyd "],
         "supporto":"DVD"

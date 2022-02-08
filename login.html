@@ -33,9 +33,10 @@
                   <label for="password" class="form-label">Password</label>
                   <input type="password" class="form-control" id="ch-password">
                 </div>
+                <p id="logMsg" class="mb-2"></p>
                 <div class="d-grid gap-2 text-center">
-                    <button type="button" class="btn btn-primary">Accedi</button>
-                    <button type="button" id="ch-subscribeBtn" class="btn btn-link">Registrati</button>
+                    <button type="button" class="btn btn-primary" id="ch-logInBtn">Accedi</button>
+                    <button type="button" class="ch-subscribeBtn btn btn-link">Registrati</button>
                     <a href="index.html">Continua come Ospite</a>
                 </div>
               </form>
@@ -54,9 +55,10 @@
                   <label for="ch-passwordConfirm" class="form-label">Conferma Password</label>
                   <input type="password" class="form-control" id="ch-passwordConfirm">
                 </div>
+                <p id="subMsg" class="mb-2"></p>
                 <div class="d-grid gap-2 text-center">
-                    <button type="button" class="btn btn-primary">Registrati</button>
-                    <a href="index.html">Annulla</a>
+                    <button type="button" id="ch-submitSubscribe" class="btn btn-primary">Registrati</button>
+                    <a class="ch-subscribeBtn" href="javascript:void(0)">Annulla</a>
                 </div>
               </form>
         </div>
